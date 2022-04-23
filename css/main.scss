@@ -154,6 +154,14 @@ ul.features-list {
             border-radius: 50%;
             margin-top: -4.5em;
         }
+        
+        blockquote {
+            font-size: 2.2vw;
+        }
+
+        cite {
+            font-size: 2.2vw;
+        }
     }
 }
 
@@ -363,6 +371,15 @@ nav {
             li {
                 font-size: 1vw;
                 margin: 0 1em;
+                
+                
+                blockquote {
+                    font-size: 1.1vw;
+                }
+
+                cite {
+                    font-size: 1.1vw;
+                }
             }
         }
     } 
