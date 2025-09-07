@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball wiki/fandom </title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo"href="">Basketball<span>Fandom</span></a>
+                
+                <img id= 'mobile-cta' class='mobile-menu' src="Images/menu.svg" alt="Open navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="Images/exit.svg" alt="Close navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="AboutMe.html">About Me</a></li>
+                        <li><a href="#">More Info</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="subscribe-cta"><a href="#">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <h1>Basketball <span>Fandom</span></h1>
+                    <p class="subhead">By Mikael Shaikh</p>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Subscribe to the newsletter</a>
+                        <a href="https://www.youtube.com/c/TorontoRaptors" class="watch-video-cta">
+                            <img src="Images/watch.svg" alt="watch a video">Watch a video
+                        </a>
+                    </div>
+                </div>
+
+                <img class="toronto-raptors-logo" src="Images/TorontoRaptors.png" class="hero-img" alt="Illustration">
+            
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h1>About me</h1>
+                <p class="why-i-like-basketball">
+                    My name is Mikael. I'm a grade 9 student. I first got into basketball when I was 10 years old. It's been my favorite sport and one of my favorite hobbies since. I play basketball with friends after school.
+                     I started this fandom for others who are intrested in basketball. If you're intrested, you can subscribe to the newsletter to recieve updates about the sport. 
+                </p>
+
+                <img src="Images/BasketballImage.jpg" alt="man holding phone">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img class="person" src="Images/BobCousy.jpg" alt="person">
+
+                        <blockquote>"Do your best when no one is looking. If you do that, then you can be successful in anything that you put your mind to."</blockquote>
+                        <cite>- Bob Cousy</cite>
+                    </li>
+                    <li>
+                        <img class="person" src="Images/BillRussell.jpg" alt="person">
+
+                        <blockquote>"Commitment separates those who live their dreams from those who live their lives regretting the opportunities they have squandered."</blockquote>
+                        <cite>- Bill Russell</cite>
+                    </li>
+                    <li>
+                        <img class="person" src="Images/PhilJackson.jpeg" alt="person">
+
+                        <blockquote>"The strength of the team is each individual member. The strength of each member is the team."</blockquote>
+                        <cite>- Phil Jackson</cite>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183477.5730309122!2d-79.49935893768863!3d43.63543769279074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2b5935bf09%3A0x5842d0e7d5669410!2sScotiabank%20Arena!5e0!3m2!1sen!2sca!4v1650926192435!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav');
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () =>{
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () =>{
+                nav.classList.remove('menu-btn');
+            })
+
+        </script>
+
+    </body>
+</html>
